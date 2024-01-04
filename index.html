@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book shop</title>
+    <link rel="stylesheet" href="./CSS/style.css" id="mood">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+
+    <header>
+        <nav class="container">
+            <a href="" class="logo">
+                <img src="./assets/Images/logo.png" alt="">
+                <span>BOOKSHOP</span>
+            </a>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Magazines</a></li>
+                <li><a href="">Books</a></li>
+                <li><a href="">Textbooks</a></li>
+                <li><a href="">Audiobooks</a></li>
+            </ul>
+            <i id="btn" class="fa-solid fa-bars" style="display: none;"></i>
+            <ul>
+                <li><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li><a href=""><i class="fa-regular fa-heart"></i></a></li>
+                <li><a href=""><i class="fa-regular fa-user"></i></a></li>
+                <li><i class="fa-solid fa-sun" id="click"></i></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="head__slider">
+        <div class="slider">
+            <div class="slide">
+                <img src="./assets/images/homeBackground.jpg" alt=""/>
+            </div>
+            <div class="slide">
+                <img src="./assets/images/homeBackground2.jpg" alt=""/>
+            </div>
+            <button class="btn btn-next"><i class="fa-solid fa-chevron-right"></i></button>
+            <button class="btn btn-prev"><i class="fa-solid fa-chevron-left"></i></button>
+            <input type="checkbox" id="toggle">
+        </div>
+    </div>
+
+
+
+
+        <section id="products" class="products">
+            <h1>Products</h1>
+            <div class="product grid">
+                <div class="product-left">
+                    <h2 class="title-left">Categories</h2>
+                    <ul class="collections">
+                        <li class="list active" data-filter="all">
+                            <span class="active-list on">
+                                <i class="fa-regular fa-circle"></i>
+                            </span>
+                            All Collections
+                        </li>
+                        <li class="list" data-filter="modern">
+                            <span class="active-list on">
+                                <i class="fa-regular fa-circle"></i> </span>Modern
+                        </li>
+                        <li class="list" data-filter="biography">
+                            <span class="active-list on">
+                                <i class="fa-regular fa-circle"></i> </span>Biography
+                        </li>
+                        <li class="list" data-filter="classic">
+                            <span class="active-list on">
+                                <i class="fa-regular fa-circle"></i> </span>Classics
+                        </li>
+                        <li class="list" data-filter="cookbook">
+                            <span class="active-list on">
+                                <i class="fa-regular fa-circle"></i> </span>Cookbooks
+                        </li>
+                        <li class="list" data-filter="detective">
+                            <span class="active-list on">
+                                <i class="fa-regular fa-circle"></i> </span>Detective
+                        </li>
+                        <li class="list" data-filter="fantasy">
+                            <span class="active-list on">
+                                <i class="fa-regular fa-circle"></i> </span>Fantasy
+                        </li>
+                        <li class="list" data-filter="fairy tale">
+                            <span class="active-list on">
+                                <i class="fa-regular fa-circle"></i> </span>Fairy tale
+                        </li>
+                        <li class="list" data-filter="fiction">
+                            <span class="active-list on">
+                                <i class="fa-regular fa-circle"></i> </span>Fiction
+                        </li>
+                        <li class="list" data-filter="horror">
+                            <span class="active-list on">
+                                <i class="fa-regular fa-circle"></i> </span>Horror
+                        </li>
+                        <li class="list" data-filter="historical fiction">
+                            <span class="active-list on">
+                                <i class="fa-regular fa-circle"></i> </span>Historical fiction
+                        </li>
+                        <li class="list" data-filter="history">
+                            <span class="active-list on">
+                                <i class="fa-regular fa-circle"></i> </span>History
+                        </li>
+                        <li class="list" data-filter="romance">
+                            <span class="active-list on">
+                                <i class="fa-regular fa-circle"></i> </span>Romance
+                        </li>
+                    </ul>
+                </div>
+                <div class="product-right">
+                    <div class="product-right-top">
+                        <form class="form grid" action="">
+                            <input type="text" class="input" id="mySearch" placeholder="Search by Title..." />
+                            <i class="fa-solid fa-right-left" id="searchBtn"></i>
+                        </form>
+                    </div>
+                    <div class="product-right-bottom grid"></div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <div class="card">
+            <h1>Card</h1>
+            <ul class="listCard"></ul>
+            <div class="checkOut grid">
+                <div class="total">0</div>
+                <div class="closeShopping">Close</div>
+            </div>
+        </div>
+
+
+        <script src="./JS/main.js"></script>
+</body>
+
+</html>
